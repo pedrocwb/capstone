@@ -42,7 +42,6 @@ import scipy as scp
 import scipy.misc
 import tensorflow as tf
 
-
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
@@ -62,14 +61,12 @@ except ImportError:
                   "'git submodule update --init --recursive'")
     exit(1)
 
-
 flags.DEFINE_string('logdir', None,
                     'Path to logdir.')
 flags.DEFINE_string('input_image', None,
                     'Image to apply KittiSeg.')
 flags.DEFINE_string('output_image', None,
                     'Image to apply KittiSeg.')
-
 
 default_run = 'KittiSeg_pretrained'
 weights_url = ("ftp://mi.eng.cam.ac.uk/"
@@ -82,7 +79,7 @@ def maybe_download_and_extract(runs_dir):
     if os.path.exists(logdir):
         # weights are downloaded. Nothing to do
         return
-      
+
     if not os.path.exists(runs_dir):
         os.makedirs(runs_dir)
     download_name = tv_utils.download(weights_url, runs_dir)
@@ -169,7 +166,8 @@ def main(_):
         image_width = hypes['jitter']['image_width']
         image = scp.misc.imresize(image, size=(image_height, image_width),
                                   interp='cubic')
-	image = image[:,:,:3]
+        image = image[:, :, :3]
+
     # Run KittiSeg model on image
     feed = {image_pl: image}
     softmax = prediction['softmax']
