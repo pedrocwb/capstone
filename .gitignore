@@ -1,0 +1,14 @@
+
+
+#ignore training data and weights
+ 
+ DATA/weights/*
+
+#ignore model params
+RUNS/*/events.*
+RUNS/*/model.*
+RUNS/*/images
+
+
+
+
