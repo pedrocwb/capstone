@@ -1,0 +1,9 @@
+2017-10-15 13:30:07,489 root INFO Evaluation Succesfull. Results:
+2017-10-15 13:30:07,491 root INFO     [train] MaxF1  :  97.1249 
+2017-10-15 13:30:07,492 root INFO     [train] BestThresh  :  38.8235 
+2017-10-15 13:30:07,492 root INFO     [train] Average Precision  :  91.8939 
+2017-10-15 13:30:07,492 root INFO     [val] MaxF1  :  97.0053 
+2017-10-15 13:30:07,492 root INFO     [val] BestThresh  :  27.4510 
+2017-10-15 13:30:07,492 root INFO     [val] Average Precision  :  92.0452 
+2017-10-15 13:30:07,492 root INFO     Speed (msec)  :  220.2870 
+2017-10-15 13:30:07,493 root INFO     Speed (fps)  :  4.5395 

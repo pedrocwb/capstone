@@ -1,0 +1,610 @@
+2017-10-01 16:13:13,111 root INFO Start training
+2017-10-01 16:13:22,716 root INFO Creating Summary for: conv1_1/filter
+2017-10-01 16:13:22,813 root INFO Creating Summary for: conv1_1/biases
+2017-10-01 16:13:22,856 root INFO Creating Summary for: conv1_2/filter
+2017-10-01 16:13:22,884 root INFO Creating Summary for: conv1_2/biases
+2017-10-01 16:13:22,926 root INFO Creating Summary for: conv2_1/filter
+2017-10-01 16:13:22,957 root INFO Creating Summary for: conv2_1/biases
+2017-10-01 16:13:23,005 root INFO Creating Summary for: conv2_2/filter
+2017-10-01 16:13:23,035 root INFO Creating Summary for: conv2_2/biases
+2017-10-01 16:13:23,078 root INFO Creating Summary for: conv3_1/filter
+2017-10-01 16:13:23,107 root INFO Creating Summary for: conv3_1/biases
+2017-10-01 16:13:23,153 root INFO Creating Summary for: conv3_2/filter
+2017-10-01 16:13:23,184 root INFO Creating Summary for: conv3_2/biases
+2017-10-01 16:13:23,226 root INFO Creating Summary for: conv3_3/filter
+2017-10-01 16:13:23,254 root INFO Creating Summary for: conv3_3/biases
+2017-10-01 16:13:24,821 root INFO Creating Summary for: conv4_1/filter
+2017-10-01 16:13:24,848 root INFO Creating Summary for: conv4_1/biases
+2017-10-01 16:13:24,903 root INFO Creating Summary for: conv4_2/filter
+2017-10-01 16:13:24,928 root INFO Creating Summary for: conv4_2/biases
+2017-10-01 16:13:24,985 root INFO Creating Summary for: conv4_3/filter
+2017-10-01 16:13:25,012 root INFO Creating Summary for: conv4_3/biases
+2017-10-01 16:13:25,075 root INFO Creating Summary for: conv5_1/filter
+2017-10-01 16:13:25,103 root INFO Creating Summary for: conv5_1/biases
+2017-10-01 16:13:25,153 root INFO Creating Summary for: conv5_2/filter
+2017-10-01 16:13:25,181 root INFO Creating Summary for: conv5_2/biases
+2017-10-01 16:13:25,241 root INFO Creating Summary for: conv5_3/filter
+2017-10-01 16:13:25,269 root INFO Creating Summary for: conv5_3/biases
+2017-10-01 16:13:30,894 root INFO Creating Summary for: fc6/weights
+2017-10-01 16:13:30,923 root INFO Creating Summary for: fc6/biases
+2017-10-01 16:13:31,284 root INFO Creating Summary for: fc7/weights
+2017-10-01 16:13:31,310 root INFO Creating Summary for: fc7/biases
+2017-10-01 16:13:31,359 root INFO Creating Summary for: score_fr/weights
+2017-10-01 16:13:31,384 root INFO Creating Summary for: score_fr/biases
+2017-10-01 16:13:31,433 root INFO Creating Summary for: upscore2/up_filter
+2017-10-01 16:13:31,470 root INFO Creating Summary for: score_pool4/weights
+2017-10-01 16:13:31,494 root INFO Creating Summary for: score_pool4/biases
+2017-10-01 16:13:31,536 root INFO Creating Summary for: upscore4/up_filter
+2017-10-01 16:13:31,569 root INFO Creating Summary for: score_pool3/weights
+2017-10-01 16:13:31,591 root INFO Creating Summary for: score_pool3/biases
+2017-10-01 16:13:31,633 root INFO Creating Summary for: upscore32/up_filter
+2017-10-01 16:14:18,550 root INFO Step 0/5000: loss = 1.15; lr = 1.00e-05; 0.219 sec (per Batch); 4.6 imgs/sec
+2017-10-01 16:14:19,795 root INFO       (raw)  Acc. : 0.55, xentropy: 0.99, weight_loss: 0.38, Precision: 0.19, True BG: 0.63, True Street [Recall]: 0.30
+2017-10-01 16:14:19,796 root INFO    (smooth)  Acc. : 0.55, xentropy: 0.99, weight_loss: 0.38, Precision: 0.19, True BG: 0.63, True Street [Recall]: 0.30
+2017-10-01 16:17:18,552 root INFO Step 100/5000: loss = 0.42; lr = 1.00e-05; 3.575 sec (per Batch); 0.3 imgs/sec
+2017-10-01 16:17:19,159 root INFO       (raw)  Acc. : 0.97, xentropy: 0.08, weight_loss: 0.38, Precision: 0.83, True BG: 0.97, True Street [Recall]: 0.99
+2017-10-01 16:17:19,160 root INFO    (smooth)  Acc. : 0.58, xentropy: 0.95, weight_loss: 0.38, Precision: 0.23, True BG: 0.65, True Street [Recall]: 0.33
+2017-10-01 16:19:57,715 root INFO Step 200/5000: loss = 0.42; lr = 1.00e-05; 3.171 sec (per Batch); 0.3 imgs/sec
+2017-10-01 16:19:58,334 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.38, Precision: 0.98, True BG: 0.99, True Street [Recall]: 0.96
+2017-10-01 16:19:58,394 root INFO    (smooth)  Acc. : 0.60, xentropy: 0.90, weight_loss: 0.38, Precision: 0.26, True BG: 0.66, True Street [Recall]: 0.37
+2017-10-01 16:21:12,957 root INFO Running Evaluation Script.
+2017-10-01 16:24:25,065 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 16:24:25,076 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 16:24:25,206 root INFO Raw Results:
+2017-10-01 16:24:25,206 root INFO     [train] MaxF1 (raw)    :  94.8667 
+2017-10-01 16:24:25,206 root INFO     [train] BestThresh (raw)    :  47.4510 
+2017-10-01 16:24:25,207 root INFO     [train] Average Precision (raw)    :  91.5557 
+2017-10-01 16:24:25,207 root INFO     [val] MaxF1 (raw)    :  94.5505 
+2017-10-01 16:24:25,207 root INFO     [val] BestThresh (raw)    :  74.5098 
+2017-10-01 16:24:25,207 root INFO     [val] Average Precision (raw)    :  91.7688 
+2017-10-01 16:24:25,207 root INFO     Speed (msec) (raw)    :  211.2498 
+2017-10-01 16:24:25,207 root INFO     Speed (fps) (raw)    :  4.7337 
+2017-10-01 16:24:25,208 root INFO Smooth Results:
+2017-10-01 16:24:25,227 root INFO     [train] MaxF1 (smooth) :  94.8667 
+2017-10-01 16:24:25,227 root INFO     [train] BestThresh (smooth) :  47.4510 
+2017-10-01 16:24:25,227 root INFO     [train] Average Precision (smooth) :  91.5557 
+2017-10-01 16:24:25,227 root INFO     [val] MaxF1 (smooth) :  94.5505 
+2017-10-01 16:24:25,228 root INFO     [val] BestThresh (smooth) :  74.5098 
+2017-10-01 16:24:25,228 root INFO     [val] Average Precision (smooth) :  91.7688 
+2017-10-01 16:24:25,228 root INFO     Speed (msec) (smooth) :  211.2498 
+2017-10-01 16:24:25,228 root INFO     Speed (fps) (smooth) :  4.7337 
+2017-10-01 16:25:33,125 root INFO Step 300/5000: loss = 0.43; lr = 1.00e-05; 1.357 sec (per Batch); 0.7 imgs/sec
+2017-10-01 16:25:33,338 root INFO       (raw)  Acc. : 0.98, xentropy: 0.04, weight_loss: 0.38, Precision: 1.00, True BG: 1.00, True Street [Recall]: 0.92
+2017-10-01 16:25:33,352 root INFO    (smooth)  Acc. : 0.62, xentropy: 0.86, weight_loss: 0.38, Precision: 0.30, True BG: 0.68, True Street [Recall]: 0.39
+2017-10-01 16:27:31,947 root INFO Step 400/5000: loss = 0.39; lr = 1.00e-05; 2.372 sec (per Batch); 0.4 imgs/sec
+2017-10-01 16:27:32,537 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.38, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.96
+2017-10-01 16:27:32,537 root INFO    (smooth)  Acc. : 0.63, xentropy: 0.82, weight_loss: 0.38, Precision: 0.33, True BG: 0.70, True Street [Recall]: 0.42
+2017-10-01 16:29:21,335 root INFO Step 500/5000: loss = 0.43; lr = 1.00e-05; 2.176 sec (per Batch); 0.5 imgs/sec
+2017-10-01 16:29:21,552 root INFO       (raw)  Acc. : 0.98, xentropy: 0.04, weight_loss: 0.38, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.93
+2017-10-01 16:29:21,553 root INFO    (smooth)  Acc. : 0.65, xentropy: 0.78, weight_loss: 0.38, Precision: 0.37, True BG: 0.71, True Street [Recall]: 0.45
+2017-10-01 16:29:29,016 root INFO Running Evaluation Script.
+2017-10-01 16:32:38,043 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 16:32:38,043 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 16:32:38,170 root INFO Raw Results:
+2017-10-01 16:32:38,170 root INFO     [train] MaxF1 (raw)    :  95.8108 
+2017-10-01 16:32:38,170 root INFO     [train] BestThresh (raw)    :  15.2941 
+2017-10-01 16:32:38,170 root INFO     [train] Average Precision (raw)    :  91.7735 
+2017-10-01 16:32:38,171 root INFO     [val] MaxF1 (raw)    :  95.4017 
+2017-10-01 16:32:38,171 root INFO     [val] BestThresh (raw)    :  31.7647 
+2017-10-01 16:32:38,171 root INFO     [val] Average Precision (raw)    :  91.8544 
+2017-10-01 16:32:38,171 root INFO     Speed (msec) (raw)    :  211.0717 
+2017-10-01 16:32:38,171 root INFO     Speed (fps) (raw)    :  4.7377 
+2017-10-01 16:32:38,171 root INFO Smooth Results:
+2017-10-01 16:32:38,174 root INFO     [train] MaxF1 (smooth) :  95.3388 
+2017-10-01 16:32:38,174 root INFO     [train] BestThresh (smooth) :  31.3725 
+2017-10-01 16:32:38,174 root INFO     [train] Average Precision (smooth) :  91.6646 
+2017-10-01 16:32:38,174 root INFO     [val] MaxF1 (smooth) :  94.9761 
+2017-10-01 16:32:38,174 root INFO     [val] BestThresh (smooth) :  53.1373 
+2017-10-01 16:32:38,174 root INFO     [val] Average Precision (smooth) :  91.8116 
+2017-10-01 16:32:38,174 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 16:32:38,174 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 16:34:39,658 root INFO Step 600/5000: loss = 0.40; lr = 1.00e-05; 2.429 sec (per Batch); 0.4 imgs/sec
+2017-10-01 16:34:40,255 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.38, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.98
+2017-10-01 16:34:40,255 root INFO    (smooth)  Acc. : 0.67, xentropy: 0.74, weight_loss: 0.38, Precision: 0.40, True BG: 0.73, True Street [Recall]: 0.47
+2017-10-01 16:36:22,168 root INFO Step 700/5000: loss = 0.40; lr = 1.00e-05; 2.038 sec (per Batch); 0.5 imgs/sec
+2017-10-01 16:36:22,578 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.38, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 16:36:22,579 root INFO    (smooth)  Acc. : 0.69, xentropy: 0.71, weight_loss: 0.38, Precision: 0.43, True BG: 0.74, True Street [Recall]: 0.50
+2017-10-01 16:37:17,962 root INFO Running Evaluation Script.
+2017-10-01 16:40:35,914 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 16:40:35,923 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 16:40:36,042 root INFO Raw Results:
+2017-10-01 16:40:36,042 root INFO     [train] MaxF1 (raw)    :  95.9518 
+2017-10-01 16:40:36,042 root INFO     [train] BestThresh (raw)    :  39.6078 
+2017-10-01 16:40:36,048 root INFO     [train] Average Precision (raw)    :  91.7024 
+2017-10-01 16:40:36,048 root INFO     [val] MaxF1 (raw)    :  95.9597 
+2017-10-01 16:40:36,048 root INFO     [val] BestThresh (raw)    :  37.6471 
+2017-10-01 16:40:36,049 root INFO     [val] Average Precision (raw)    :  91.8465 
+2017-10-01 16:40:36,049 root INFO     Speed (msec) (raw)    :  209.4893 
+2017-10-01 16:40:36,049 root INFO     Speed (fps) (raw)    :  4.7735 
+2017-10-01 16:40:36,049 root INFO Smooth Results:
+2017-10-01 16:40:36,052 root INFO     [train] MaxF1 (smooth) :  95.8108 
+2017-10-01 16:40:36,053 root INFO     [train] BestThresh (smooth) :  39.6078 
+2017-10-01 16:40:36,053 root INFO     [train] Average Precision (smooth) :  91.7024 
+2017-10-01 16:40:36,053 root INFO     [val] MaxF1 (smooth) :  95.4017 
+2017-10-01 16:40:36,053 root INFO     [val] BestThresh (smooth) :  37.6471 
+2017-10-01 16:40:36,054 root INFO     [val] Average Precision (smooth) :  91.8465 
+2017-10-01 16:40:36,054 root INFO     Speed (msec) (smooth) :  211.0717 
+2017-10-01 16:40:36,054 root INFO     Speed (fps) (smooth) :  4.7377 
+2017-10-01 16:41:32,972 root INFO Step 800/5000: loss = 0.41; lr = 1.00e-05; 1.138 sec (per Batch); 0.9 imgs/sec
+2017-10-01 16:41:34,168 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.37, Precision: 0.96, True BG: 0.99, True Street [Recall]: 0.97
+2017-10-01 16:41:34,168 root INFO    (smooth)  Acc. : 0.70, xentropy: 0.67, weight_loss: 0.38, Precision: 0.45, True BG: 0.75, True Street [Recall]: 0.52
+2017-10-01 16:43:07,983 root INFO Step 900/5000: loss = 0.38; lr = 1.00e-05; 1.876 sec (per Batch); 0.5 imgs/sec
+2017-10-01 16:43:08,388 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.37, Precision: nan, True BG: 1.00, True Street [Recall]: 0.00
+2017-10-01 16:43:08,389 root INFO    (smooth)  Acc. : 0.72, xentropy: 0.64, weight_loss: 0.38, Precision: nan, True BG: 0.76, True Street [Recall]: 0.50
+2017-10-01 16:44:34,704 root INFO Step 1000/5000: loss = 0.39; lr = 1.00e-05; 1.726 sec (per Batch); 0.6 imgs/sec
+2017-10-01 16:44:35,128 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.37, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.95
+2017-10-01 16:44:35,129 root INFO    (smooth)  Acc. : 0.73, xentropy: 0.61, weight_loss: 0.38, Precision: nan, True BG: 0.78, True Street [Recall]: 0.52
+2017-10-01 16:44:41,973 root INFO Running Evaluation Script.
+2017-10-01 16:47:52,302 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 16:47:52,302 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 16:47:52,420 root INFO Raw Results:
+2017-10-01 16:47:52,421 root INFO     [train] MaxF1 (raw)    :  96.9609 
+2017-10-01 16:47:52,421 root INFO     [train] BestThresh (raw)    :  18.0392 
+2017-10-01 16:47:52,421 root INFO     [train] Average Precision (raw)    :  91.8732 
+2017-10-01 16:47:52,421 root INFO     [val] MaxF1 (raw)    :  96.8357 
+2017-10-01 16:47:52,421 root INFO     [val] BestThresh (raw)    :  23.1373 
+2017-10-01 16:47:52,421 root INFO     [val] Average Precision (raw)    :  92.0371 
+2017-10-01 16:47:52,421 root INFO     Speed (msec) (raw)    :  210.5896 
+2017-10-01 16:47:52,421 root INFO     Speed (fps) (raw)    :  4.7486 
+2017-10-01 16:47:52,422 root INFO Smooth Results:
+2017-10-01 16:47:52,423 root INFO     [train] MaxF1 (smooth) :  95.8813 
+2017-10-01 16:47:52,423 root INFO     [train] BestThresh (smooth) :  28.8235 
+2017-10-01 16:47:52,423 root INFO     [train] Average Precision (smooth) :  91.7380 
+2017-10-01 16:47:52,423 root INFO     [val] MaxF1 (smooth) :  95.6807 
+2017-10-01 16:47:52,424 root INFO     [val] BestThresh (smooth) :  34.7059 
+2017-10-01 16:47:52,424 root INFO     [val] Average Precision (smooth) :  91.8505 
+2017-10-01 16:47:52,424 root INFO     Speed (msec) (smooth) :  210.8307 
+2017-10-01 16:47:52,424 root INFO     Speed (fps) (smooth) :  4.7431 
+2017-10-01 16:49:28,258 root INFO Step 1100/5000: loss = 0.42; lr = 1.00e-05; 1.917 sec (per Batch); 0.5 imgs/sec
+2017-10-01 16:49:28,477 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.37, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.97
+2017-10-01 16:49:28,477 root INFO    (smooth)  Acc. : 0.74, xentropy: 0.58, weight_loss: 0.38, Precision: nan, True BG: 0.79, True Street [Recall]: 0.54
+2017-10-01 16:50:51,778 root INFO Step 1200/5000: loss = 0.40; lr = 1.00e-05; 1.666 sec (per Batch); 0.6 imgs/sec
+2017-10-01 16:50:52,199 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.37, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.94
+2017-10-01 16:50:52,199 root INFO    (smooth)  Acc. : 0.75, xentropy: 0.55, weight_loss: 0.38, Precision: nan, True BG: 0.80, True Street [Recall]: 0.56
+2017-10-01 16:51:48,660 root INFO Running Evaluation Script.
+2017-10-01 16:54:52,890 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 16:54:52,890 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 16:54:52,983 root INFO Raw Results:
+2017-10-01 16:54:52,984 root INFO     [train] MaxF1 (raw)    :  97.4880 
+2017-10-01 16:54:52,984 root INFO     [train] BestThresh (raw)    :  46.6667 
+2017-10-01 16:54:52,984 root INFO     [train] Average Precision (raw)    :  91.8799 
+2017-10-01 16:54:52,984 root INFO     [val] MaxF1 (raw)    :  97.1483 
+2017-10-01 16:54:52,984 root INFO     [val] BestThresh (raw)    :  44.3137 
+2017-10-01 16:54:52,984 root INFO     [val] Average Precision (raw)    :  92.0145 
+2017-10-01 16:54:52,984 root INFO     Speed (msec) (raw)    :  212.9622 
+2017-10-01 16:54:52,984 root INFO     Speed (fps) (raw)    :  4.6957 
+2017-10-01 16:54:52,985 root INFO Smooth Results:
+2017-10-01 16:54:52,986 root INFO     [train] MaxF1 (smooth) :  95.9518 
+2017-10-01 16:54:52,986 root INFO     [train] BestThresh (smooth) :  39.6078 
+2017-10-01 16:54:52,986 root INFO     [train] Average Precision (smooth) :  91.7735 
+2017-10-01 16:54:52,986 root INFO     [val] MaxF1 (smooth) :  95.9597 
+2017-10-01 16:54:52,986 root INFO     [val] BestThresh (smooth) :  37.6471 
+2017-10-01 16:54:52,986 root INFO     [val] Average Precision (smooth) :  91.8544 
+2017-10-01 16:54:52,987 root INFO     Speed (msec) (smooth) :  211.0717 
+2017-10-01 16:54:52,987 root INFO     Speed (fps) (smooth) :  4.7377 
+2017-10-01 16:55:32,531 root INFO Step 1300/5000: loss = 0.37; lr = 1.00e-05; 0.791 sec (per Batch); 1.3 imgs/sec
+2017-10-01 16:55:32,930 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.37, Precision: 0.94, True BG: 1.00, True Street [Recall]: 0.95
+2017-10-01 16:55:32,931 root INFO    (smooth)  Acc. : 0.77, xentropy: 0.52, weight_loss: 0.38, Precision: nan, True BG: 0.81, True Street [Recall]: 0.58
+2017-10-01 16:57:08,947 root INFO Step 1400/5000: loss = 0.38; lr = 1.00e-05; 1.920 sec (per Batch); 0.5 imgs/sec
+2017-10-01 16:57:09,348 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.37, Precision: 0.00, True BG: 1.00, True Street [Recall]: 0.00
+2017-10-01 16:57:09,349 root INFO    (smooth)  Acc. : 0.78, xentropy: 0.50, weight_loss: 0.38, Precision: nan, True BG: 0.82, True Street [Recall]: 0.55
+2017-10-01 16:58:29,369 root INFO Step 1500/5000: loss = 0.39; lr = 1.00e-05; 1.600 sec (per Batch); 0.6 imgs/sec
+2017-10-01 16:58:29,580 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.36, Precision: 0.55, True BG: 0.99, True Street [Recall]: 0.87
+2017-10-01 16:58:29,580 root INFO    (smooth)  Acc. : 0.79, xentropy: 0.47, weight_loss: 0.38, Precision: nan, True BG: 0.83, True Street [Recall]: 0.57
+2017-10-01 16:58:36,813 root INFO Running Evaluation Script.
+2017-10-01 17:01:40,058 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:01:40,059 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:01:40,182 root INFO Raw Results:
+2017-10-01 17:01:40,183 root INFO     [train] MaxF1 (raw)    :  97.1303 
+2017-10-01 17:01:40,183 root INFO     [train] BestThresh (raw)    :  47.0588 
+2017-10-01 17:01:40,183 root INFO     [train] Average Precision (raw)    :  91.8589 
+2017-10-01 17:01:40,183 root INFO     [val] MaxF1 (raw)    :  97.0578 
+2017-10-01 17:01:40,183 root INFO     [val] BestThresh (raw)    :  43.9216 
+2017-10-01 17:01:40,183 root INFO     [val] Average Precision (raw)    :  92.0231 
+2017-10-01 17:01:40,184 root INFO     Speed (msec) (raw)    :  213.4896 
+2017-10-01 17:01:40,184 root INFO     Speed (fps) (raw)    :  4.6841 
+2017-10-01 17:01:40,184 root INFO Smooth Results:
+2017-10-01 17:01:40,186 root INFO     [train] MaxF1 (smooth) :  96.4564 
+2017-10-01 17:01:40,186 root INFO     [train] BestThresh (smooth) :  43.1373 
+2017-10-01 17:01:40,186 root INFO     [train] Average Precision (smooth) :  91.8162 
+2017-10-01 17:01:40,186 root INFO     [val] MaxF1 (smooth) :  96.3977 
+2017-10-01 17:01:40,187 root INFO     [val] BestThresh (smooth) :  40.7843 
+2017-10-01 17:01:40,187 root INFO     [val] Average Precision (smooth) :  91.9345 
+2017-10-01 17:01:40,187 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 17:01:40,187 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 17:02:59,636 root INFO Step 1600/5000: loss = 0.37; lr = 1.00e-05; 1.589 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:02:59,849 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.36, Precision: 0.96, True BG: 1.00, True Street [Recall]: 0.92
+2017-10-01 17:02:59,850 root INFO    (smooth)  Acc. : 0.80, xentropy: 0.45, weight_loss: 0.38, Precision: nan, True BG: 0.83, True Street [Recall]: 0.59
+2017-10-01 17:04:33,812 root INFO Step 1700/5000: loss = 0.38; lr = 1.00e-05; 1.879 sec (per Batch); 0.5 imgs/sec
+2017-10-01 17:04:34,026 root INFO       (raw)  Acc. : 0.98, xentropy: 0.05, weight_loss: 0.36, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.92
+2017-10-01 17:04:34,026 root INFO    (smooth)  Acc. : 0.81, xentropy: 0.43, weight_loss: 0.37, Precision: nan, True BG: 0.84, True Street [Recall]: 0.60
+2017-10-01 17:05:27,238 root INFO Running Evaluation Script.
+2017-10-01 17:08:30,632 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:08:30,633 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:08:30,765 root INFO Raw Results:
+2017-10-01 17:08:30,766 root INFO     [train] MaxF1 (raw)    :  97.5198 
+2017-10-01 17:08:30,766 root INFO     [train] BestThresh (raw)    :  70.5882 
+2017-10-01 17:08:30,766 root INFO     [train] Average Precision (raw)    :  91.8760 
+2017-10-01 17:08:30,766 root INFO     [val] MaxF1 (raw)    :  96.7773 
+2017-10-01 17:08:30,767 root INFO     [val] BestThresh (raw)    :  69.8039 
+2017-10-01 17:08:30,767 root INFO     [val] Average Precision (raw)    :  91.8924 
+2017-10-01 17:08:30,767 root INFO     Speed (msec) (raw)    :  213.4965 
+2017-10-01 17:08:30,767 root INFO     Speed (fps) (raw)    :  4.6839 
+2017-10-01 17:08:30,768 root INFO Smooth Results:
+2017-10-01 17:08:30,770 root INFO     [train] MaxF1 (smooth) :  96.9609 
+2017-10-01 17:08:30,770 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 17:08:30,770 root INFO     [train] Average Precision (smooth) :  91.8589 
+2017-10-01 17:08:30,770 root INFO     [val] MaxF1 (smooth) :  96.7773 
+2017-10-01 17:08:30,771 root INFO     [val] BestThresh (smooth) :  43.9216 
+2017-10-01 17:08:30,771 root INFO     [val] Average Precision (smooth) :  91.8924 
+2017-10-01 17:08:30,771 root INFO     Speed (msec) (smooth) :  211.2498 
+2017-10-01 17:08:30,771 root INFO     Speed (fps) (smooth) :  4.7337 
+2017-10-01 17:09:13,171 root INFO Step 1800/5000: loss = 0.38; lr = 1.00e-05; 0.848 sec (per Batch); 1.2 imgs/sec
+2017-10-01 17:09:13,393 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.36, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.96
+2017-10-01 17:09:13,393 root INFO    (smooth)  Acc. : 0.82, xentropy: 0.41, weight_loss: 0.37, Precision: nan, True BG: 0.85, True Street [Recall]: 0.62
+2017-10-01 17:10:33,087 root INFO Step 1900/5000: loss = 0.37; lr = 1.00e-05; 1.594 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:10:33,307 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.36, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 17:10:33,307 root INFO    (smooth)  Acc. : 0.83, xentropy: 0.39, weight_loss: 0.37, Precision: nan, True BG: 0.86, True Street [Recall]: 0.64
+2017-10-01 17:11:55,554 root INFO Step 2000/5000: loss = 0.37; lr = 1.00e-05; 1.645 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:11:55,768 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.35, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.99
+2017-10-01 17:11:55,768 root INFO    (smooth)  Acc. : 0.83, xentropy: 0.37, weight_loss: 0.37, Precision: nan, True BG: 0.86, True Street [Recall]: 0.66
+2017-10-01 17:12:02,699 root INFO Running Evaluation Script.
+2017-10-01 17:15:32,882 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:15:32,886 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:15:33,078 root INFO Raw Results:
+2017-10-01 17:15:33,079 root INFO     [train] MaxF1 (raw)    :  97.3112 
+2017-10-01 17:15:33,079 root INFO     [train] BestThresh (raw)    :  53.7255 
+2017-10-01 17:15:33,079 root INFO     [train] Average Precision (raw)    :  91.8731 
+2017-10-01 17:15:33,079 root INFO     [val] MaxF1 (raw)    :  97.1249 
+2017-10-01 17:15:33,079 root INFO     [val] BestThresh (raw)    :  43.1373 
+2017-10-01 17:15:33,080 root INFO     [val] Average Precision (raw)    :  92.0243 
+2017-10-01 17:15:33,080 root INFO     Speed (msec) (raw)    :  208.7905 
+2017-10-01 17:15:33,080 root INFO     Speed (fps) (raw)    :  4.7895 
+2017-10-01 17:15:33,081 root INFO Smooth Results:
+2017-10-01 17:15:33,083 root INFO     [train] MaxF1 (smooth) :  97.0456 
+2017-10-01 17:15:33,083 root INFO     [train] BestThresh (smooth) :  46.8627 
+2017-10-01 17:15:33,083 root INFO     [train] Average Precision (smooth) :  91.8660 
+2017-10-01 17:15:33,083 root INFO     [val] MaxF1 (smooth) :  96.8065 
+2017-10-01 17:15:33,084 root INFO     [val] BestThresh (smooth) :  43.5294 
+2017-10-01 17:15:33,084 root INFO     [val] Average Precision (smooth) :  91.9535 
+2017-10-01 17:15:33,084 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 17:15:33,084 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 17:17:02,240 root INFO Step 2100/5000: loss = 0.37; lr = 1.00e-05; 1.482 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:17:02,642 root INFO       (raw)  Acc. : 0.99, xentropy: 0.04, weight_loss: 0.35, Precision: 0.95, True BG: 0.99, True Street [Recall]: 0.92
+2017-10-01 17:17:02,643 root INFO    (smooth)  Acc. : 0.84, xentropy: 0.35, weight_loss: 0.37, Precision: nan, True BG: 0.87, True Street [Recall]: 0.67
+2017-10-01 17:18:15,738 root INFO Step 2200/5000: loss = 0.35; lr = 1.00e-05; 1.462 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:18:15,955 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.35, Precision: nan, True BG: 1.00, True Street [Recall]: 0.00
+2017-10-01 17:18:15,956 root INFO    (smooth)  Acc. : 0.85, xentropy: 0.34, weight_loss: 0.37, Precision: nan, True BG: 0.88, True Street [Recall]: 0.64
+2017-10-01 17:19:03,835 root INFO Running Evaluation Script.
+2017-10-01 17:22:21,855 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:22:21,889 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:22:22,008 root INFO Raw Results:
+2017-10-01 17:22:22,008 root INFO     [train] MaxF1 (raw)    :  97.0983 
+2017-10-01 17:22:22,008 root INFO     [train] BestThresh (raw)    :  19.2157 
+2017-10-01 17:22:22,008 root INFO     [train] Average Precision (raw)    :  91.8907 
+2017-10-01 17:22:22,008 root INFO     [val] MaxF1 (raw)    :  96.8409 
+2017-10-01 17:22:22,009 root INFO     [val] BestThresh (raw)    :  12.1569 
+2017-10-01 17:22:22,009 root INFO     [val] Average Precision (raw)    :  92.0265 
+2017-10-01 17:22:22,009 root INFO     Speed (msec) (raw)    :  214.9537 
+2017-10-01 17:22:22,009 root INFO     Speed (fps) (raw)    :  4.6522 
+2017-10-01 17:22:22,009 root INFO Smooth Results:
+2017-10-01 17:22:22,010 root INFO     [train] MaxF1 (smooth) :  97.0983 
+2017-10-01 17:22:22,011 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 17:22:22,011 root INFO     [train] Average Precision (smooth) :  91.8731 
+2017-10-01 17:22:22,011 root INFO     [val] MaxF1 (smooth) :  96.8357 
+2017-10-01 17:22:22,011 root INFO     [val] BestThresh (smooth) :  43.1373 
+2017-10-01 17:22:22,011 root INFO     [val] Average Precision (smooth) :  92.0145 
+2017-10-01 17:22:22,011 root INFO     Speed (msec) (smooth) :  211.2498 
+2017-10-01 17:22:22,011 root INFO     Speed (fps) (smooth) :  4.7337 
+2017-10-01 17:23:02,936 root INFO Step 2300/5000: loss = 0.35; lr = 1.00e-05; 0.818 sec (per Batch); 1.2 imgs/sec
+2017-10-01 17:23:03,343 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.35, Precision: 0.64, True BG: 1.00, True Street [Recall]: 0.34
+2017-10-01 17:23:03,344 root INFO    (smooth)  Acc. : 0.86, xentropy: 0.32, weight_loss: 0.37, Precision: nan, True BG: 0.88, True Street [Recall]: 0.62
+2017-10-01 17:24:21,292 root INFO Step 2400/5000: loss = 0.35; lr = 1.00e-05; 1.559 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:24:21,509 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.34, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.97
+2017-10-01 17:24:21,510 root INFO    (smooth)  Acc. : 0.86, xentropy: 0.31, weight_loss: 0.37, Precision: nan, True BG: 0.89, True Street [Recall]: 0.64
+2017-10-01 17:25:34,538 root INFO Step 2500/5000: loss = 0.36; lr = 1.00e-05; 1.461 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:25:34,764 root INFO       (raw)  Acc. : 0.99, xentropy: 0.01, weight_loss: 0.34, Precision: 1.00, True BG: 1.00, True Street [Recall]: 0.96
+2017-10-01 17:25:34,765 root INFO    (smooth)  Acc. : 0.87, xentropy: 0.29, weight_loss: 0.37, Precision: nan, True BG: 0.89, True Street [Recall]: 0.65
+2017-10-01 17:25:42,175 root INFO Running Evaluation Script.
+2017-10-01 17:28:51,958 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:28:51,958 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:28:52,065 root INFO Raw Results:
+2017-10-01 17:28:52,066 root INFO     [train] MaxF1 (raw)    :  97.4434 
+2017-10-01 17:28:52,066 root INFO     [train] BestThresh (raw)    :  60.7843 
+2017-10-01 17:28:52,066 root INFO     [train] Average Precision (raw)    :  91.8806 
+2017-10-01 17:28:52,066 root INFO     [val] MaxF1 (raw)    :  97.2812 
+2017-10-01 17:28:52,066 root INFO     [val] BestThresh (raw)    :  43.1373 
+2017-10-01 17:28:52,066 root INFO     [val] Average Precision (raw)    :  92.0258 
+2017-10-01 17:28:52,066 root INFO     Speed (msec) (raw)    :  208.9278 
+2017-10-01 17:28:52,066 root INFO     Speed (fps) (raw)    :  4.7863 
+2017-10-01 17:28:52,067 root INFO Smooth Results:
+2017-10-01 17:28:52,068 root INFO     [train] MaxF1 (smooth) :  97.1143 
+2017-10-01 17:28:52,068 root INFO     [train] BestThresh (smooth) :  46.8627 
+2017-10-01 17:28:52,068 root INFO     [train] Average Precision (smooth) :  91.8732 
+2017-10-01 17:28:52,068 root INFO     [val] MaxF1 (smooth) :  96.8383 
+2017-10-01 17:28:52,068 root INFO     [val] BestThresh (smooth) :  43.1373 
+2017-10-01 17:28:52,068 root INFO     [val] Average Precision (smooth) :  92.0188 
+2017-10-01 17:28:52,069 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 17:28:52,069 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 17:30:11,278 root INFO Step 2600/5000: loss = 0.36; lr = 1.00e-05; 1.584 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:30:11,500 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.34, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.97
+2017-10-01 17:30:11,501 root INFO    (smooth)  Acc. : 0.88, xentropy: 0.28, weight_loss: 0.36, Precision: nan, True BG: 0.90, True Street [Recall]: 0.67
+2017-10-01 17:31:37,529 root INFO Step 2700/5000: loss = 0.34; lr = 1.00e-05; 1.720 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:31:38,731 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.34, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.98
+2017-10-01 17:31:38,731 root INFO    (smooth)  Acc. : 0.88, xentropy: 0.26, weight_loss: 0.36, Precision: nan, True BG: 0.90, True Street [Recall]: 0.69
+2017-10-01 17:32:32,412 root INFO Running Evaluation Script.
+2017-10-01 17:35:40,588 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:35:40,589 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:35:40,686 root INFO Raw Results:
+2017-10-01 17:35:40,687 root INFO     [train] MaxF1 (raw)    :  97.3011 
+2017-10-01 17:35:40,687 root INFO     [train] BestThresh (raw)    :  18.8235 
+2017-10-01 17:35:40,687 root INFO     [train] Average Precision (raw)    :  91.8932 
+2017-10-01 17:35:40,687 root INFO     [val] MaxF1 (raw)    :  97.1075 
+2017-10-01 17:35:40,687 root INFO     [val] BestThresh (raw)    :  19.6078 
+2017-10-01 17:35:40,687 root INFO     [val] Average Precision (raw)    :  92.0414 
+2017-10-01 17:35:40,687 root INFO     Speed (msec) (raw)    :  210.9394 
+2017-10-01 17:35:40,687 root INFO     Speed (fps) (raw)    :  4.7407 
+2017-10-01 17:35:40,688 root INFO Smooth Results:
+2017-10-01 17:35:40,689 root INFO     [train] MaxF1 (smooth) :  97.1303 
+2017-10-01 17:35:40,689 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 17:35:40,689 root INFO     [train] Average Precision (smooth) :  91.8732 
+2017-10-01 17:35:40,689 root INFO     [val] MaxF1 (smooth) :  96.8409 
+2017-10-01 17:35:40,689 root INFO     [val] BestThresh (smooth) :  43.1373 
+2017-10-01 17:35:40,690 root INFO     [val] Average Precision (smooth) :  92.0231 
+2017-10-01 17:35:40,690 root INFO     Speed (msec) (smooth) :  211.0717 
+2017-10-01 17:35:40,690 root INFO     Speed (fps) (smooth) :  4.7377 
+2017-10-01 17:36:35,678 root INFO Step 2800/5000: loss = 0.35; lr = 1.00e-05; 1.100 sec (per Batch); 0.9 imgs/sec
+2017-10-01 17:36:35,897 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.33, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.96
+2017-10-01 17:36:35,902 root INFO    (smooth)  Acc. : 0.89, xentropy: 0.25, weight_loss: 0.36, Precision: nan, True BG: 0.91, True Street [Recall]: 0.70
+2017-10-01 17:37:58,847 root INFO Step 2900/5000: loss = 0.35; lr = 1.00e-05; 1.659 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:37:59,065 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.33, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 17:37:59,066 root INFO    (smooth)  Acc. : 0.89, xentropy: 0.24, weight_loss: 0.36, Precision: nan, True BG: 0.91, True Street [Recall]: 0.71
+2017-10-01 17:39:28,011 root INFO Step 3000/5000: loss = 0.36; lr = 1.00e-05; 1.779 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:39:28,226 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.33, Precision: nan, True BG: 1.00, True Street [Recall]: 0.00
+2017-10-01 17:39:28,226 root INFO    (smooth)  Acc. : 0.90, xentropy: 0.23, weight_loss: 0.36, Precision: nan, True BG: 0.92, True Street [Recall]: 0.68
+2017-10-01 17:39:35,203 root INFO Running Evaluation Script.
+2017-10-01 17:42:39,838 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:42:39,839 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:42:39,951 root INFO Raw Results:
+2017-10-01 17:42:39,951 root INFO     [train] MaxF1 (raw)    :  96.5412 
+2017-10-01 17:42:39,951 root INFO     [train] BestThresh (raw)    :  36.4706 
+2017-10-01 17:42:39,951 root INFO     [train] Average Precision (raw)    :  91.8703 
+2017-10-01 17:42:39,952 root INFO     [val] MaxF1 (raw)    :  96.6656 
+2017-10-01 17:42:39,952 root INFO     [val] BestThresh (raw)    :  28.6275 
+2017-10-01 17:42:39,952 root INFO     [val] Average Precision (raw)    :  92.0277 
+2017-10-01 17:42:39,952 root INFO     Speed (msec) (raw)    :  211.6952 
+2017-10-01 17:42:39,952 root INFO     Speed (fps) (raw)    :  4.7238 
+2017-10-01 17:42:39,952 root INFO Smooth Results:
+2017-10-01 17:42:39,954 root INFO     [train] MaxF1 (smooth) :  97.1143 
+2017-10-01 17:42:39,954 root INFO     [train] BestThresh (smooth) :  43.1373 
+2017-10-01 17:42:39,954 root INFO     [train] Average Precision (smooth) :  91.8732 
+2017-10-01 17:42:39,954 root INFO     [val] MaxF1 (smooth) :  96.8383 
+2017-10-01 17:42:39,954 root INFO     [val] BestThresh (smooth) :  40.3922 
+2017-10-01 17:42:39,954 root INFO     [val] Average Precision (smooth) :  92.0237 
+2017-10-01 17:42:39,954 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 17:42:39,955 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 17:43:53,707 root INFO Step 3100/5000: loss = 0.35; lr = 1.00e-05; 1.475 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:43:53,929 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.33, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.96
+2017-10-01 17:43:53,930 root INFO    (smooth)  Acc. : 0.90, xentropy: 0.22, weight_loss: 0.36, Precision: nan, True BG: 0.92, True Street [Recall]: 0.69
+2017-10-01 17:45:08,366 root INFO Step 3200/5000: loss = 0.33; lr = 1.00e-05; 1.489 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:45:08,587 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.32, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.97
+2017-10-01 17:45:08,587 root INFO    (smooth)  Acc. : 0.91, xentropy: 0.21, weight_loss: 0.36, Precision: nan, True BG: 0.93, True Street [Recall]: 0.71
+2017-10-01 17:45:55,519 root INFO Running Evaluation Script.
+2017-10-01 17:49:08,591 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:49:08,659 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:49:08,768 root INFO Raw Results:
+2017-10-01 17:49:08,769 root INFO     [train] MaxF1 (raw)    :  97.0018 
+2017-10-01 17:49:08,769 root INFO     [train] BestThresh (raw)    :  48.2353 
+2017-10-01 17:49:08,769 root INFO     [train] Average Precision (raw)    :  91.8711 
+2017-10-01 17:49:08,769 root INFO     [val] MaxF1 (raw)    :  96.9524 
+2017-10-01 17:49:08,769 root INFO     [val] BestThresh (raw)    :  40.0000 
+2017-10-01 17:49:08,769 root INFO     [val] Average Precision (raw)    :  92.0028 
+2017-10-01 17:49:08,769 root INFO     Speed (msec) (raw)    :  210.2844 
+2017-10-01 17:49:08,769 root INFO     Speed (fps) (raw)    :  4.7555 
+2017-10-01 17:49:08,770 root INFO Smooth Results:
+2017-10-01 17:49:08,771 root INFO     [train] MaxF1 (smooth) :  97.0983 
+2017-10-01 17:49:08,772 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 17:49:08,772 root INFO     [train] Average Precision (smooth) :  91.8731 
+2017-10-01 17:49:08,772 root INFO     [val] MaxF1 (smooth) :  96.8409 
+2017-10-01 17:49:08,772 root INFO     [val] BestThresh (smooth) :  40.0000 
+2017-10-01 17:49:08,772 root INFO     [val] Average Precision (smooth) :  92.0231 
+2017-10-01 17:49:08,772 root INFO     Speed (msec) (smooth) :  211.0717 
+2017-10-01 17:49:08,773 root INFO     Speed (fps) (smooth) :  4.7377 
+2017-10-01 17:49:44,041 root INFO Step 3300/5000: loss = 0.34; lr = 1.00e-05; 0.705 sec (per Batch); 1.4 imgs/sec
+2017-10-01 17:49:44,258 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.32, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 17:49:44,258 root INFO    (smooth)  Acc. : 0.91, xentropy: 0.20, weight_loss: 0.35, Precision: nan, True BG: 0.93, True Street [Recall]: 0.72
+2017-10-01 17:51:14,403 root INFO Step 3400/5000: loss = 0.32; lr = 1.00e-05; 1.803 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:51:14,634 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.32, Precision: 0.94, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 17:51:14,634 root INFO    (smooth)  Acc. : 0.92, xentropy: 0.19, weight_loss: 0.35, Precision: nan, True BG: 0.93, True Street [Recall]: 0.73
+2017-10-01 17:52:32,714 root INFO Step 3500/5000: loss = 0.33; lr = 1.00e-05; 1.562 sec (per Batch); 0.6 imgs/sec
+2017-10-01 17:52:33,141 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.31, Precision: 0.96, True BG: 1.00, True Street [Recall]: 0.93
+2017-10-01 17:52:33,142 root INFO    (smooth)  Acc. : 0.92, xentropy: 0.18, weight_loss: 0.35, Precision: nan, True BG: 0.94, True Street [Recall]: 0.74
+2017-10-01 17:52:40,405 root INFO Running Evaluation Script.
+2017-10-01 17:56:00,429 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 17:56:00,430 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 17:56:00,534 root INFO Raw Results:
+2017-10-01 17:56:00,535 root INFO     [train] MaxF1 (raw)    :  97.3753 
+2017-10-01 17:56:00,535 root INFO     [train] BestThresh (raw)    :  53.7255 
+2017-10-01 17:56:00,535 root INFO     [train] Average Precision (raw)    :  91.8722 
+2017-10-01 17:56:00,535 root INFO     [val] MaxF1 (raw)    :  97.3121 
+2017-10-01 17:56:00,535 root INFO     [val] BestThresh (raw)    :  34.1176 
+2017-10-01 17:56:00,535 root INFO     [val] Average Precision (raw)    :  92.0176 
+2017-10-01 17:56:00,535 root INFO     Speed (msec) (raw)    :  216.8245 
+2017-10-01 17:56:00,536 root INFO     Speed (fps) (raw)    :  4.6120 
+2017-10-01 17:56:00,536 root INFO Smooth Results:
+2017-10-01 17:56:00,537 root INFO     [train] MaxF1 (smooth) :  97.1143 
+2017-10-01 17:56:00,538 root INFO     [train] BestThresh (smooth) :  46.8627 
+2017-10-01 17:56:00,538 root INFO     [train] Average Precision (smooth) :  91.8727 
+2017-10-01 17:56:00,538 root INFO     [val] MaxF1 (smooth) :  96.8966 
+2017-10-01 17:56:00,538 root INFO     [val] BestThresh (smooth) :  38.8235 
+2017-10-01 17:56:00,538 root INFO     [val] Average Precision (smooth) :  92.0204 
+2017-10-01 17:56:00,538 root INFO     Speed (msec) (smooth) :  211.1607 
+2017-10-01 17:56:00,538 root INFO     Speed (fps) (smooth) :  4.7357 
+2017-10-01 17:57:33,948 root INFO Step 3600/5000: loss = 0.33; lr = 1.00e-05; 1.868 sec (per Batch); 0.5 imgs/sec
+2017-10-01 17:57:34,172 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.31, Precision: 0.98, True BG: 1.00, True Street [Recall]: 0.99
+2017-10-01 17:57:34,173 root INFO    (smooth)  Acc. : 0.92, xentropy: 0.17, weight_loss: 0.35, Precision: nan, True BG: 0.94, True Street [Recall]: 0.76
+2017-10-01 17:58:43,368 root INFO Step 3700/5000: loss = 0.32; lr = 1.00e-05; 1.384 sec (per Batch); 0.7 imgs/sec
+2017-10-01 17:58:43,586 root INFO       (raw)  Acc. : 0.99, xentropy: 0.01, weight_loss: 0.31, Precision: 0.97, True BG: 1.00, True Street [Recall]: 0.98
+2017-10-01 17:58:43,587 root INFO    (smooth)  Acc. : 0.93, xentropy: 0.16, weight_loss: 0.35, Precision: nan, True BG: 0.94, True Street [Recall]: 0.77
+2017-10-01 17:59:31,662 root INFO Running Evaluation Script.
+2017-10-01 18:02:39,695 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:02:39,714 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:02:39,822 root INFO Raw Results:
+2017-10-01 18:02:39,822 root INFO     [train] MaxF1 (raw)    :  97.4564 
+2017-10-01 18:02:39,822 root INFO     [train] BestThresh (raw)    :  26.2745 
+2017-10-01 18:02:39,822 root INFO     [train] Average Precision (raw)    :  91.9078 
+2017-10-01 18:02:39,822 root INFO     [val] MaxF1 (raw)    :  97.1231 
+2017-10-01 18:02:39,823 root INFO     [val] BestThresh (raw)    :  23.1373 
+2017-10-01 18:02:39,823 root INFO     [val] Average Precision (raw)    :  92.0418 
+2017-10-01 18:02:39,823 root INFO     Speed (msec) (raw)    :  213.9417 
+2017-10-01 18:02:39,823 root INFO     Speed (fps) (raw)    :  4.6742 
+2017-10-01 18:02:39,823 root INFO Smooth Results:
+2017-10-01 18:02:39,825 root INFO     [train] MaxF1 (smooth) :  97.1303 
+2017-10-01 18:02:39,825 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 18:02:39,825 root INFO     [train] Average Precision (smooth) :  91.8731 
+2017-10-01 18:02:39,825 root INFO     [val] MaxF1 (smooth) :  96.9524 
+2017-10-01 18:02:39,826 root INFO     [val] BestThresh (smooth) :  37.6471 
+2017-10-01 18:02:39,826 root INFO     [val] Average Precision (smooth) :  92.0231 
+2017-10-01 18:02:39,826 root INFO     Speed (msec) (smooth) :  211.2498 
+2017-10-01 18:02:39,826 root INFO     Speed (fps) (smooth) :  4.7337 
+2017-10-01 18:03:25,446 root INFO Step 3800/5000: loss = 0.32; lr = 1.00e-05; 0.911 sec (per Batch); 1.1 imgs/sec
+2017-10-01 18:03:25,665 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.31, Precision: 0.90, True BG: 1.00, True Street [Recall]: 0.66
+2017-10-01 18:03:25,665 root INFO    (smooth)  Acc. : 0.93, xentropy: 0.15, weight_loss: 0.34, Precision: nan, True BG: 0.94, True Street [Recall]: 0.76
+2017-10-01 18:04:34,237 root INFO Step 3900/5000: loss = 0.32; lr = 1.00e-05; 1.371 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:04:34,460 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.30, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.96
+2017-10-01 18:04:34,460 root INFO    (smooth)  Acc. : 0.93, xentropy: 0.15, weight_loss: 0.34, Precision: nan, True BG: 0.95, True Street [Recall]: 0.77
+2017-10-01 18:05:42,646 root INFO Step 4000/5000: loss = 0.30; lr = 1.00e-05; 1.364 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:05:42,863 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.30, Precision: 0.67, True BG: 1.00, True Street [Recall]: 0.78
+2017-10-01 18:05:42,863 root INFO    (smooth)  Acc. : 0.94, xentropy: 0.14, weight_loss: 0.34, Precision: nan, True BG: 0.95, True Street [Recall]: 0.77
+2017-10-01 18:05:49,619 root INFO Running Evaluation Script.
+2017-10-01 18:08:54,967 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:08:54,968 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:08:55,150 root INFO Raw Results:
+2017-10-01 18:08:55,150 root INFO     [train] MaxF1 (raw)    :  97.6112 
+2017-10-01 18:08:55,151 root INFO     [train] BestThresh (raw)    :  54.1176 
+2017-10-01 18:08:55,151 root INFO     [train] Average Precision (raw)    :  91.9085 
+2017-10-01 18:08:55,151 root INFO     [val] MaxF1 (raw)    :  97.0418 
+2017-10-01 18:08:55,151 root INFO     [val] BestThresh (raw)    :  52.5490 
+2017-10-01 18:08:55,151 root INFO     [val] Average Precision (raw)    :  92.0157 
+2017-10-01 18:08:55,152 root INFO     Speed (msec) (raw)    :  212.8624 
+2017-10-01 18:08:55,152 root INFO     Speed (fps) (raw)    :  4.6979 
+2017-10-01 18:08:55,152 root INFO Smooth Results:
+2017-10-01 18:08:55,155 root INFO     [train] MaxF1 (smooth) :  97.2157 
+2017-10-01 18:08:55,155 root INFO     [train] BestThresh (smooth) :  46.8627 
+2017-10-01 18:08:55,155 root INFO     [train] Average Precision (smooth) :  91.8732 
+2017-10-01 18:08:55,155 root INFO     [val] MaxF1 (smooth) :  96.9971 
+2017-10-01 18:08:55,156 root INFO     [val] BestThresh (smooth) :  38.8235 
+2017-10-01 18:08:55,156 root INFO     [val] Average Precision (smooth) :  92.0204 
+2017-10-01 18:08:55,156 root INFO     Speed (msec) (smooth) :  211.4725 
+2017-10-01 18:08:55,156 root INFO     Speed (fps) (smooth) :  4.7288 
+2017-10-01 18:10:18,560 root INFO Step 4100/5000: loss = 0.31; lr = 1.00e-05; 1.433 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:10:18,773 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.30, Precision: 0.88, True BG: 1.00, True Street [Recall]: 0.75
+2017-10-01 18:10:18,773 root INFO    (smooth)  Acc. : 0.94, xentropy: 0.13, weight_loss: 0.34, Precision: nan, True BG: 0.95, True Street [Recall]: 0.77
+2017-10-01 18:11:30,877 root INFO Step 4200/5000: loss = 0.32; lr = 1.00e-05; 1.442 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:11:31,091 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.29, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.95
+2017-10-01 18:11:31,092 root INFO    (smooth)  Acc. : 0.94, xentropy: 0.13, weight_loss: 0.34, Precision: nan, True BG: 0.95, True Street [Recall]: 0.78
+2017-10-01 18:12:12,117 root INFO Running Evaluation Script.
+2017-10-01 18:15:21,323 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:15:21,323 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:15:21,445 root INFO Raw Results:
+2017-10-01 18:15:21,446 root INFO     [train] MaxF1 (raw)    :  97.6387 
+2017-10-01 18:15:21,446 root INFO     [train] BestThresh (raw)    :  30.9804 
+2017-10-01 18:15:21,446 root INFO     [train] Average Precision (raw)    :  91.9116 
+2017-10-01 18:15:21,446 root INFO     [val] MaxF1 (raw)    :  97.1271 
+2017-10-01 18:15:21,446 root INFO     [val] BestThresh (raw)    :  28.2353 
+2017-10-01 18:15:21,447 root INFO     [val] Average Precision (raw)    :  92.0156 
+2017-10-01 18:15:21,447 root INFO     Speed (msec) (raw)    :  213.1256 
+2017-10-01 18:15:21,447 root INFO     Speed (fps) (raw)    :  4.6921 
+2017-10-01 18:15:21,447 root INFO Smooth Results:
+2017-10-01 18:15:21,449 root INFO     [train] MaxF1 (smooth) :  97.3011 
+2017-10-01 18:15:21,449 root INFO     [train] BestThresh (smooth) :  46.6667 
+2017-10-01 18:15:21,449 root INFO     [train] Average Precision (smooth) :  91.8732 
+2017-10-01 18:15:21,449 root INFO     [val] MaxF1 (smooth) :  97.0418 
+2017-10-01 18:15:21,450 root INFO     [val] BestThresh (smooth) :  37.6471 
+2017-10-01 18:15:21,450 root INFO     [val] Average Precision (smooth) :  92.0176 
+2017-10-01 18:15:21,450 root INFO     Speed (msec) (smooth) :  211.6952 
+2017-10-01 18:15:21,450 root INFO     Speed (fps) (smooth) :  4.7238 
+2017-10-01 18:16:04,998 root INFO Step 4300/5000: loss = 0.31; lr = 1.00e-05; 0.871 sec (per Batch); 1.1 imgs/sec
+2017-10-01 18:16:05,215 root INFO       (raw)  Acc. : 0.99, xentropy: 0.03, weight_loss: 0.29, Precision: 0.96, True BG: 0.99, True Street [Recall]: 0.98
+2017-10-01 18:16:05,216 root INFO    (smooth)  Acc. : 0.94, xentropy: 0.12, weight_loss: 0.33, Precision: nan, True BG: 0.96, True Street [Recall]: 0.79
+2017-10-01 18:17:22,263 root INFO Step 4400/5000: loss = 0.32; lr = 1.00e-05; 1.541 sec (per Batch); 0.6 imgs/sec
+2017-10-01 18:17:22,475 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.29, Precision: 0.70, True BG: 1.00, True Street [Recall]: 0.94
+2017-10-01 18:17:22,475 root INFO    (smooth)  Acc. : 0.95, xentropy: 0.12, weight_loss: 0.33, Precision: nan, True BG: 0.96, True Street [Recall]: 0.80
+2017-10-01 18:18:36,116 root INFO Step 4500/5000: loss = 0.30; lr = 1.00e-05; 1.473 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:18:36,335 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.28, Precision: 0.97, True BG: 0.99, True Street [Recall]: 0.98
+2017-10-01 18:18:36,336 root INFO    (smooth)  Acc. : 0.95, xentropy: 0.11, weight_loss: 0.33, Precision: nan, True BG: 0.96, True Street [Recall]: 0.81
+2017-10-01 18:18:43,993 root INFO Running Evaluation Script.
+2017-10-01 18:21:51,281 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:21:51,295 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:21:51,401 root INFO Raw Results:
+2017-10-01 18:21:51,402 root INFO     [train] MaxF1 (raw)    :  97.6848 
+2017-10-01 18:21:51,402 root INFO     [train] BestThresh (raw)    :  46.2745 
+2017-10-01 18:21:51,402 root INFO     [train] Average Precision (raw)    :  91.9040 
+2017-10-01 18:21:51,402 root INFO     [val] MaxF1 (raw)    :  97.4193 
+2017-10-01 18:21:51,402 root INFO     [val] BestThresh (raw)    :  35.6863 
+2017-10-01 18:21:51,402 root INFO     [val] Average Precision (raw)    :  92.0143 
+2017-10-01 18:21:51,402 root INFO     Speed (msec) (raw)    :  213.9722 
+2017-10-01 18:21:51,402 root INFO     Speed (fps) (raw)    :  4.6735 
+2017-10-01 18:21:51,403 root INFO Smooth Results:
+2017-10-01 18:21:51,404 root INFO     [train] MaxF1 (smooth) :  97.3062 
+2017-10-01 18:21:51,404 root INFO     [train] BestThresh (smooth) :  46.4706 
+2017-10-01 18:21:51,404 root INFO     [train] Average Precision (smooth) :  91.8746 
+2017-10-01 18:21:51,404 root INFO     [val] MaxF1 (smooth) :  97.0498 
+2017-10-01 18:21:51,404 root INFO     [val] BestThresh (smooth) :  36.6667 
+2017-10-01 18:21:51,404 root INFO     [val] Average Precision (smooth) :  92.0166 
+2017-10-01 18:21:51,405 root INFO     Speed (msec) (smooth) :  212.2788 
+2017-10-01 18:21:51,405 root INFO     Speed (fps) (smooth) :  4.7108 
+2017-10-01 18:23:17,262 root INFO Step 4600/5000: loss = 0.28; lr = 1.00e-05; 1.717 sec (per Batch); 0.6 imgs/sec
+2017-10-01 18:23:17,482 root INFO       (raw)  Acc. : 1.00, xentropy: 0.00, weight_loss: 0.28, Precision: 0.91, True BG: 1.00, True Street [Recall]: 0.87
+2017-10-01 18:23:17,483 root INFO    (smooth)  Acc. : 0.95, xentropy: 0.11, weight_loss: 0.33, Precision: nan, True BG: 0.96, True Street [Recall]: 0.81
+2017-10-01 18:24:25,403 root INFO Step 4700/5000: loss = 0.28; lr = 1.00e-05; 1.358 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:24:25,617 root INFO       (raw)  Acc. : 1.00, xentropy: 0.01, weight_loss: 0.28, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.98
+2017-10-01 18:24:25,617 root INFO    (smooth)  Acc. : 0.95, xentropy: 0.10, weight_loss: 0.32, Precision: nan, True BG: 0.96, True Street [Recall]: 0.82
+2017-10-01 18:25:11,122 root INFO Running Evaluation Script.
+2017-10-01 18:28:24,651 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:28:24,652 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:28:24,840 root INFO Raw Results:
+2017-10-01 18:28:24,841 root INFO     [train] MaxF1 (raw)    :  97.2488 
+2017-10-01 18:28:24,841 root INFO     [train] BestThresh (raw)    :  30.5882 
+2017-10-01 18:28:24,841 root INFO     [train] Average Precision (raw)    :  91.9019 
+2017-10-01 18:28:24,841 root INFO     [val] MaxF1 (raw)    :  96.8661 
+2017-10-01 18:28:24,841 root INFO     [val] BestThresh (raw)    :  19.6078 
+2017-10-01 18:28:24,842 root INFO     [val] Average Precision (raw)    :  92.0307 
+2017-10-01 18:28:24,842 root INFO     Speed (msec) (raw)    :  212.2047 
+2017-10-01 18:28:24,842 root INFO     Speed (fps) (raw)    :  4.7124 
+2017-10-01 18:28:24,843 root INFO Smooth Results:
+2017-10-01 18:28:24,845 root INFO     [train] MaxF1 (smooth) :  97.3011 
+2017-10-01 18:28:24,845 root INFO     [train] BestThresh (smooth) :  46.2745 
+2017-10-01 18:28:24,845 root INFO     [train] Average Precision (smooth) :  91.8760 
+2017-10-01 18:28:24,845 root INFO     [val] MaxF1 (smooth) :  97.0418 
+2017-10-01 18:28:24,846 root INFO     [val] BestThresh (smooth) :  35.6863 
+2017-10-01 18:28:24,846 root INFO     [val] Average Precision (smooth) :  92.0176 
+2017-10-01 18:28:24,846 root INFO     Speed (msec) (smooth) :  212.2047 
+2017-10-01 18:28:24,846 root INFO     Speed (fps) (smooth) :  4.7124 
+2017-10-01 18:29:06,862 root INFO Step 4800/5000: loss = 0.29; lr = 1.00e-05; 0.840 sec (per Batch); 1.2 imgs/sec
+2017-10-01 18:29:07,071 root INFO       (raw)  Acc. : 0.98, xentropy: 0.04, weight_loss: 0.27, Precision: 0.95, True BG: 0.99, True Street [Recall]: 0.98
+2017-10-01 18:29:07,072 root INFO    (smooth)  Acc. : 0.96, xentropy: 0.10, weight_loss: 0.32, Precision: nan, True BG: 0.97, True Street [Recall]: 0.83
+2017-10-01 18:30:22,410 root INFO Step 4900/5000: loss = 0.29; lr = 1.00e-05; 1.507 sec (per Batch); 0.7 imgs/sec
+2017-10-01 18:30:22,634 root INFO       (raw)  Acc. : 0.99, xentropy: 0.02, weight_loss: 0.27, Precision: 0.99, True BG: 1.00, True Street [Recall]: 0.97
+2017-10-01 18:30:22,634 root INFO    (smooth)  Acc. : 0.96, xentropy: 0.10, weight_loss: 0.32, Precision: nan, True BG: 0.97, True Street [Recall]: 0.83
+2017-10-01 18:31:38,960 root INFO Running Evaluation Script.
+2017-10-01 18:34:48,435 root INFO Evaluation Finished. All results will be saved to:
+2017-10-01 18:34:48,435 root INFO /home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13
+2017-10-01 18:34:48,531 root INFO Raw Results:
+2017-10-01 18:34:48,531 root INFO     [train] MaxF1 (raw)    :  97.1249 
+2017-10-01 18:34:48,531 root INFO     [train] BestThresh (raw)    :  38.8235 
+2017-10-01 18:34:48,531 root INFO     [train] Average Precision (raw)    :  91.8939 
+2017-10-01 18:34:48,531 root INFO     [val] MaxF1 (raw)    :  97.0053 
+2017-10-01 18:34:48,531 root INFO     [val] BestThresh (raw)    :  27.4510 
+2017-10-01 18:34:48,532 root INFO     [val] Average Precision (raw)    :  92.0452 
+2017-10-01 18:34:48,532 root INFO     Speed (msec) (raw)    :  209.3217 
+2017-10-01 18:34:48,532 root INFO     Speed (fps) (raw)    :  4.7773 
+2017-10-01 18:34:48,532 root INFO Smooth Results:
+2017-10-01 18:34:48,533 root INFO     [train] MaxF1 (smooth) :  97.2750 
+2017-10-01 18:34:48,533 root INFO     [train] BestThresh (smooth) :  42.9412 
+2017-10-01 18:34:48,533 root INFO     [train] Average Precision (smooth) :  91.8779 
+2017-10-01 18:34:48,534 root INFO     [val] MaxF1 (smooth) :  97.0235 
+2017-10-01 18:34:48,534 root INFO     [val] BestThresh (smooth) :  34.9020 
+2017-10-01 18:34:48,534 root INFO     [val] Average Precision (smooth) :  92.0204 
+2017-10-01 18:34:48,534 root INFO     Speed (msec) (smooth) :  211.9500 
+2017-10-01 18:34:48,534 root INFO     Speed (fps) (smooth) :  4.7181 

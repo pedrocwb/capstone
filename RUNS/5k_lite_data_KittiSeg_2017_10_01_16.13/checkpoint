@@ -1,0 +1,4 @@
+model_checkpoint_path: "/home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13/model.ckpt-4999"
+all_model_checkpoint_paths: "/home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13/model.ckpt-2000"
+all_model_checkpoint_paths: "/home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13/model.ckpt-4000"
+all_model_checkpoint_paths: "/home/pmmn11/Experiments/KittiSeg/hypes/../RUNS/5k_lite_data_KittiSeg_2017_10_01_16.13/model.ckpt-4999"
