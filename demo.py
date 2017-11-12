@@ -45,7 +45,7 @@ import tensorflow as tf
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-sys.path.insert(1, 'incl')
+sys.path.insert(1, 'incl/')
 
 from seg_utils import seg_utils as seg
 

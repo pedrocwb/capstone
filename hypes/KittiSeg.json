@@ -9,7 +9,7 @@
   "path": ["../incl"],
 
   "data": {
-    "train_file": "lung_data/data_training_lite.txt",
+    "train_file": "lung_data/training.txt",
     "val_file": "lung_data/validation.txt",
     "test_file": "lung_data/testing.txt",
     "road_color" : [255,255,255],
