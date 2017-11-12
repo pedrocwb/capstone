@@ -52,7 +52,7 @@
     "eval_iter"   : 100,
     "write_iter"  : 100,
     "save_iter"   : 2000,
-    "image_iter"  : 2000
+    "image_iter"  : 5000
   },
 
   "solver": {
@@ -63,7 +63,7 @@
       "threads": 4,
       "learning_rate": 1e-5,
       "learning_rate_step": null,
-      "max_steps": 12000
+      "max_steps": 2000
   },
   "use_fc_wd": true,
   "loss": "xentropy",
