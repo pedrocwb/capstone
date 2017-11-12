@@ -88,10 +88,9 @@ def create_test_output(hypes, sess, image_pl, softmax):
             real_image = os.path.join(image_dir, real_image)
             image_gt   = os.path.join(image_dir, image_gt)
 
-            image = scp.misc.imread(real_image)
-            gt_image    = scp.misc.imread(image_gt)
-            image = image[:,:,:3]
-            gt_image = gt_image[:,:,:3]
+            image = scp.misc.imread(real_image, mode="RGB")
+            gt_image    = scp.misc.imread(image_gt, mode="RGB")
+
             shape = image.shape
 
             feed_dict = {image_pl: image}
