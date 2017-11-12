@@ -105,7 +105,7 @@ def create_test_output(hypes, sess, image_pl, softmax):
 
             name = os.path.basename(real_image)
 
-            FN, FP, posNum, negNum = eval_image(hypes, image_gt, output_im)
+            FN, FP, posNum, negNum = eval_image(hypes, gt_image, output_im)
 
             save_file = os.path.join(logdir, name)
             print("Writing file: %s", save_file)
@@ -132,7 +132,6 @@ def create_test_output(hypes, sess, image_pl, softmax):
 
 
 def eval_image(hypes, gt_image, cnn_image):
-    """."""
     thresh = np.array(range(0, 256))/255.0
     road_gt = gt_image[:, :, 2] > 0
     valid_gt = gt_image[:, :, 0] > 0
