@@ -108,7 +108,7 @@ def pxEval_maximizeFMeasure(totalPosNum, totalNegNum, totalFN, totalFP, thresh =
     @param thresh: vector
     '''
 
-    #Calc missing stuff
+
     totalTP = totalPosNum - totalFN
     totalTN = totalNegNum - totalFP
 

@@ -52,7 +52,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
     data_dir = hypes['dirs']['data_dir']
 
     eval_dict = {}
-    for phase in ['train', 'val']:
+    for phase in ['train', 'val', 'test']:
         data_file = hypes['data']['{}_file'.format(phase)]
         data_file = os.path.join(data_dir, data_file)
         image_dir = os.path.dirname(data_file)
@@ -123,8 +123,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
                         green_image = utils.fast_overlay(image, hard)
                         image_list.append((name2, green_image))
 
-                    FN, FP, posNum, negNum = eval_image(hypes,
-                                                        gt_image, output_im)
+                    FN, FP, posNum, negNum = eval_image(hypes,gt_image, output_im)
 
                     total_fp += FP
                     total_fn += FN
@@ -132,7 +131,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
                     total_negnum += negNum
 
         eval_dict[phase] = seg.pxEval_maximizeFMeasure(
-            total_posnum, total_negnum, total_fn, total_fp, thresh=thresh)
+            total_posnum, total_negnum, total_fn, total_fp, thresh=c)
 
         if phase == 'val':
             start_time = time.time()
