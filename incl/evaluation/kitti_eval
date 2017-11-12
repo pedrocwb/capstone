@@ -267,7 +267,7 @@ def do_kitti_eval_with_training_data(hypes, sess, image_pl, softmax):
     show_dict = ['MaxF', 'BestThresh', 'AvgPrec', 'PRE_wp', 'REC_wp',
                  'FPR_wp', 'FNR_wp']
     eval_files = ['val3.txt', 'um.txt', 'umm.txt', 'uu.txt']
-    eval_names = ['Validation Data', 'Urban Marked',
+    eval_names = ['Validation DATA', 'Urban Marked',
                   'Urban Multi Marked', 'Urban Unmarked']
 
     logging_file = os.path.join(hypes['dirs']['eval_out'], 'kitti.log')
@@ -283,7 +283,7 @@ def do_kitti_eval_with_training_data(hypes, sess, image_pl, softmax):
         eval_val_dict = eval_dataset(hypes, data_file, False,
                                      sess, image_pl, softmax)
 
-        logging.info("Results for %s Data.", name)
+        logging.info("Results for %s DATA.", name)
 
         factor = 100
 
@@ -354,7 +354,7 @@ def do_inference(hypes, modules, logdir):
                 embed()
                 exit(0)
 
-    logging.info("Doing evaluation with Validation Data")
+    logging.info("Doing evaluation with Validation DATA")
     val_file = os.path.join(hypes['dirs']['data_dir'],
                             hypes['data']['val_file'])
     eval_dict = eval_dataset(hypes, val_file, True, sess, image_pl, softmax)
@@ -371,7 +371,7 @@ def do_inference(hypes, modules, logdir):
     rootlog = logging.getLogger('')
     rootlog.addHandler(filewriter)
 
-    logging.info('Statistics on Validation Data.')
+    logging.info('Statistics on Validation DATA.')
 
     logging.info('MaxF1          : %4.2f', 100*eval_dict['MaxF'])
     logging.info('BestThresh     : %4.2f', 100*eval_dict['BestThresh'])

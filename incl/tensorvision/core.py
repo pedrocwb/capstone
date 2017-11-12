@@ -56,7 +56,7 @@ def build_training_graph(hypes, queue, modules):
     hypes : dict
         Hyperparameters
     queue: tf.queue
-        Data Queue
+        DATA Queue
     modules : tuple
         The modules load in utils.
 

@@ -64,7 +64,7 @@ def maybe_download_and_extract(hypes):
     kitti_data_url = hypes['data']['kitti_url']
 
     if kitti_data_url == '':
-        logging.error("Data URL for Kitti Data not provided.")
+        logging.error("DATA URL for Kitti DATA not provided.")
         url = "http://www.cvlibs.net/download.php?file=data_road.zip"
         logging.error("Please visit: {}".format(url))
         logging.error("and request Kitti Download link.")
@@ -78,7 +78,7 @@ def maybe_download_and_extract(hypes):
         logging.error("Enter URL in hypes/kittiSeg.json")
         exit(1)
 
-    logging.info("Downloading Kitti Road Data.")
+    logging.info("Downloading Kitti Road DATA.")
     utils.download(kitti_data_url, data_dir)
     # Extract and prepare KITTI DATA
     logging.info("Extracting kitti_road data.")

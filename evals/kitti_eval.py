@@ -143,12 +143,10 @@ def evaluate(hypes, sess, image_pl, inf_out):
     eval_list = []
 
     for phase in ['train', 'val']:
-        eval_list.append(('[{}] MaxF1'.format(phase),
-                          100*eval_dict[phase]['MaxF']))
-        eval_list.append(('[{}] BestThresh'.format(phase),
-                          100*eval_dict[phase]['BestThresh']))
-        eval_list.append(('[{}] Average Precision'.format(phase),
-                          100*eval_dict[phase]['AvgPrec']))
+        eval_list.append(('[{}] MaxF1'.format(phase), 100*eval_dict[phase]['MaxF']))
+        eval_list.append(('[{}] BestThresh'.format(phase), 100*eval_dict[phase]['BestThresh']))
+        eval_list.append(('[{}] Average Precision'.format(phase),100*eval_dict[phase]['AvgPrec']))
+
     eval_list.append(('Speed (msec)', 1000*dt))
     eval_list.append(('Speed (fps)', 1/dt))
 
