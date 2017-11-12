@@ -105,9 +105,7 @@ def create_test_output(hypes, sess, image_pl, softmax):
 
             name = os.path.basename(real_image)
 
-            FN, FP, posNum, negNum = seg.evalExp(image_gt, output_im,
-                                         thresh, validMap=None,
-                                         validArea=None)
+            FN, FP, posNum, negNum = eval_image(hypes, image_gt, output_im)
 
             save_file = os.path.join(logdir, name)
             print("Writing file: %s", save_file)
@@ -125,11 +123,11 @@ def create_test_output(hypes, sess, image_pl, softmax):
             total_negnum += negNum
 
 
-        eval_dict = seg.pxEval_maximizeFMeasure(
-            total_posnum, total_negnum, total_fn, total_fp, thresh=thresh)
+            eval_dict = seg.pxEval_maximizeFMeasure(
+                total_posnum, total_negnum, total_fn, total_fp, thresh=thresh)
 
-        print(' MaxF1 : % 0.04f ' % (100 * eval_dict['MaxF']))
-        print(' Average Precision : % 0.04f ' % (100*eval_dict['AvgPrec']))
+            print(' MaxF1 : % 0.04f ' % (100 * eval_dict['MaxF']))
+            print(' Average Precision : % 0.04f ' % (100*eval_dict['AvgPrec']))
 
 
 
