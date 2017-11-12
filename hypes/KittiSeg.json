@@ -51,8 +51,8 @@
     "display_iter": 20,
     "eval_iter"   : 100,
     "write_iter"  : 100,
-    "save_iter"   : 2500,
-    "image_iter"  : 5000
+    "save_iter"   : 2000,
+    "image_iter"  : 2000
   },
 
   "solver": {
