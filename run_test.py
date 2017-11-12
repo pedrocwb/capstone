@@ -103,7 +103,7 @@ def create_test_output(hypes, sess, image_pl, softmax):
             hard = output_im > 0.5
             green_image = utils.fast_overlay(image, hard)
 
-            name = os.path.basename(image_file)
+            name = os.path.basename(real_image)
 
             FN, FP, posNum, negNum = eval_image(hypes, gt_image, output_im)
 
