@@ -24,7 +24,7 @@ import tensorflow as tf
 import tensorvision.utils as utils
 import tensorvision.core as core
 import tensorvision.analyze as ana
-import seg_utils as seg
+from seg_utils import seg_utils as seg
 
 # configure logging
 if 'TV_IS_DEV' in os.environ and os.environ['TV_IS_DEV']:
@@ -87,8 +87,8 @@ def create_test_output(hypes, sess, image_pl, softmax):
             green_image = utils.fast_overlay(image, hard)
 
             name = os.path.basename(image_file)
-            new_name = name.split('_')[0] + "_road_" + name.split('_')[1]
-
+            #new_name = name.split('_')[0] + "_road_" + name.split('_')[1]
+            new_name = name
 
             save_file = os.path.join(logdir, new_name)
             logging.info("Writing file: %s", save_file)
