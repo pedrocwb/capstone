@@ -126,8 +126,8 @@ def create_test_output(hypes, sess, image_pl, softmax):
         eval_dict = seg.pxEval_maximizeFMeasure(
             total_posnum, total_negnum, total_fn, total_fp, thresh=thresh)
 
-        logging.info(' MaxF1 : % 0.04f ' % (100*eval_dict[phase]['MaxF']))
-        logging.info(' Average Precision : % 0.04f ' % (100*eval_dict[phase]['AvgPrec']))
+        logging.info(' MaxF1 : % 0.04f ' % (100*eval_dict['MaxF']))
+        logging.info(' Average Precision : % 0.04f ' % (100*eval_dict['AvgPrec']))
 
 
 
