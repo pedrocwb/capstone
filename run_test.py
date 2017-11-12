@@ -67,14 +67,30 @@ def create_test_output(hypes, sess, image_pl, softmax):
     if not os.path.exists(logdir_green):
         os.mkdir(logdir_green)
 
+    thresh = np.array(range(0, 256))/255.0
+    total_fp = np.zeros(thresh.shape)
+    total_fn = np.zeros(thresh.shape)
+    total_posnum = 0
+    total_negnum = 0
+
+
+
     image_list = []
 
     with open(data_file) as file:
         for i, image_file in enumerate(file):
-            image_file = image_file.rstrip()
-            image_file = os.path.join(image_dir, image_file)
-            image = scp.misc.imread(image_file)
+            real_image = image_file.split(" ")[0]        #image
+            image_gt   = image_file.split(" ")[1]        #mask
+            real_image = real_image.rstrip()
+            image_gt   = image_gt.rstrip()
+
+            real_image = os.path.join(image_dir, real_image)
+            image_gt   = os.path.join(image_dir, image_gt)
+
+            image = scp.misc.imread(real_image)
+            gt_image    = scp.misc.imread(image_gt)
             image = image[:,:,:3]
+            gt_image = gt_image[:,:,:3]
             shape = image.shape
 
             feed_dict = {image_pl: image}
@@ -87,19 +103,44 @@ def create_test_output(hypes, sess, image_pl, softmax):
             green_image = utils.fast_overlay(image, hard)
 
             name = os.path.basename(image_file)
-            #new_name = name.split('_')[0] + "_road_" + name.split('_')[1]
-            new_name = name
 
-            save_file = os.path.join(logdir, new_name)
+            FN, FP, posNum, negNum = eval_image(hypes, gt_image, output_im)
+
+            save_file = os.path.join(logdir, name)
             logging.info("Writing file: %s", save_file)
             scp.misc.imsave(save_file, output_im)
 
-            save_file = os.path.join(logdir_rb, new_name)
+            save_file = os.path.join(logdir_rb, name)
             scp.misc.imsave(save_file, ov_image)
 
-            save_file = os.path.join(logdir_green, new_name)
+            save_file = os.path.join(logdir_green, name)
             scp.misc.imsave(save_file, green_image)
 
+            total_fp += FP
+            total_fn += FN
+            total_posnum += posNum
+            total_negnum += negNum
+
+
+        eval_dict = seg.pxEval_maximizeFMeasure(
+            total_posnum, total_negnum, total_fn, total_fp, thresh=c)
+
+        logging.info(' MaxF1 : % 0.04f ' % (100*eval_dict[phase]['MaxF']))
+        logging.info(' Average Precision : % 0.04f ' % (100*eval_dict[phase]['AvgPrec']))
+
+
+
+def eval_image(hypes, gt_image, cnn_image):
+    """."""
+    thresh = np.array(range(0, 256))/255.0
+    road_gt = gt_image[:, :, 2] > 0
+    valid_gt = gt_image[:, :, 0] > 0
+
+    FN, FP, posNum, negNum = seg.evalExp(road_gt, cnn_image,
+                                         thresh, validMap=None,
+                                         validArea=valid_gt)
+
+    return FN, FP, posNum, negNum
 
 def _create_input_placeholder():
     image_pl = tf.placeholder(tf.float32)
