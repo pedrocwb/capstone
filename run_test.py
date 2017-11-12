@@ -105,7 +105,9 @@ def create_test_output(hypes, sess, image_pl, softmax):
 
             name = os.path.basename(real_image)
 
-            FN, FP, posNum, negNum = eval_image(hypes, gt_image, output_im)
+            FN, FP, posNum, negNum = seg.evalExp(image_gt, output_im,
+                                         thresh, validMap=None,
+                                         validArea=None)
 
             save_file = os.path.join(logdir, name)
             print("Writing file: %s", save_file)
