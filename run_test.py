@@ -167,6 +167,7 @@ def main(_):
     logdir = os.path.realpath(FLAGS.logdir)
     logging.info("Starting to analyze Model in: %s", logdir)
     do_inference(logdir)
+    logging.info("Finished! ")
 
 
 if __name__ == '__main__':
