@@ -79,6 +79,7 @@ def create_test_output(hypes, sess, image_pl, softmax):
 
     with open(data_file) as file:
         for i, image_file in enumerate(file):
+            print(image_file)
             real_image = image_file.split(" ")[0]        #image
             image_gt   = image_file.split(" ")[1]        #mask
             real_image = real_image.rstrip()
