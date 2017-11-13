@@ -53,6 +53,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     eval_dict = {}
     for phase in ['train', 'val', 'test']:
+        print(phase)
         data_file = hypes['data']['{}_file'.format(phase)]
         data_file = os.path.join(data_dir, data_file)
         image_dir = os.path.dirname(data_file)
