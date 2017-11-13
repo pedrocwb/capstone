@@ -10,7 +10,7 @@
 
   "data": {
     "train_file": "lung_data/training_lite.txt",
-    "val_file": "lung_data/val1.txt",
+    "val_file": "lung_data/validation.txt",
     "test_file": "lung_data/testing.txt",
     "road_color" : [255,255,255],
     "background_color" : [0,0,0],
@@ -49,10 +49,10 @@
 
   "logging": {
     "display_iter": 100,
-    "eval_iter"   : 5,
-    "write_iter"  : 100,
-    "save_iter"   : 2000,
-    "image_iter"  : 5000
+    "eval_iter"   : 250,
+    "write_iter"  : 500,
+    "save_iter"   : 3000,
+    "image_iter"  : 6000
   },
 
   "solver": {
@@ -63,7 +63,7 @@
       "threads": 4,
       "learning_rate": 1e-5,
       "learning_rate_step": null,
-      "max_steps": 10
+      "max_steps": 60000
   },
   "use_fc_wd": true,
   "loss": "xentropy",
