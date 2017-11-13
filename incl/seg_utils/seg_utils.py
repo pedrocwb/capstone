@@ -185,11 +185,6 @@ def pxEval_maximizeFMeasure(totalPosNum, totalNegNum, totalFN, totalFP, thresh =
 
     #plotPrecisionRecall(precision, recall, "plotPrecisionRecall")
 
-
-    print("precision {}".format(type(precision)))
-    print("precision2 {}".format(type(precision2)))
-    print("accuracy {}".format(type(accuracy)))
-
     #return a dict
     return prob_eval_scores
 

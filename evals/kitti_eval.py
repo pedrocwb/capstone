@@ -52,8 +52,8 @@ def evaluate(hypes, sess, image_pl, inf_out):
     data_dir = hypes['dirs']['data_dir']
 
     eval_dict = {}
-    for phase in ['train', 'val', 'test']:
-
+    #for phase in ['train', 'val', 'test']:
+    for phase in ['val']:
         print(phase)
 
         data_file = hypes['data']['{}_file'.format(phase)]
@@ -144,7 +144,8 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     eval_list = []
 
-    for phase in ['train', 'val', 'test']:
+    #for phase in ['train', 'val', 'test']:
+    for phase in ['val']:
         eval_list.append(('[{}] MaxF1'.format(phase), 100*eval_dict[phase]['MaxF']))
         eval_list.append(('[{}] BestThresh'.format(phase), 100*eval_dict[phase]['BestThresh']))
         eval_list.append(('[{}] Average Precision'.format(phase),100*eval_dict[phase]['AvgPrec']))
