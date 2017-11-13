@@ -53,7 +53,8 @@ def download(url, dest_directory):
 
 def print_eval_dict(eval_dict, prefix=''):
     for name, value in eval_dict:
-            print("{} {}".format(name, type(value)))
+            if name == "precision":
+                print("{} {}".format(name, max(value)))
             logging.info('    %s %s : % 0.04f ' % (name, prefix, value))
     return
 
