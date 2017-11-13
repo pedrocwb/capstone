@@ -165,7 +165,7 @@ def pxEval_maximizeFMeasure(totalPosNum, totalNegNum, totalFN, totalFP, thresh =
     prob_eval_scores  = calcEvalMeasures(valuesMaxF)
     prob_eval_scores['AvgPrec'] = AvgPrec
     prob_eval_scores['MaxF'] = MaxF
-    prob_eval_scores['Accuracy'] = accuracy
+    prob_eval_scores['Accuracy'] = np.average(accuracy)
 
     #prob_eval_scores['totalFN'] = totalFN
     #prob_eval_scores['totalFP'] = totalFP
