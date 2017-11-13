@@ -53,7 +53,9 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     eval_dict = {}
     for phase in ['train', 'val', 'test']:
+
         print(phase)
+
         data_file = hypes['data']['{}_file'.format(phase)]
         data_file = os.path.join(data_dir, data_file)
         image_dir = os.path.dirname(data_file)
@@ -142,10 +144,12 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     eval_list = []
 
-    for phase in ['train', 'val']:
+    for phase in ['train', 'val', 'test']:
         eval_list.append(('[{}] MaxF1'.format(phase), 100*eval_dict[phase]['MaxF']))
         eval_list.append(('[{}] BestThresh'.format(phase), 100*eval_dict[phase]['BestThresh']))
         eval_list.append(('[{}] Average Precision'.format(phase),100*eval_dict[phase]['AvgPrec']))
+        eval_list.append(('[{}] Precision'.format(phase), 100 * eval_dict[phase]['precision']))
+        eval_list.append(('[{}] Accuracy'.format(phase), 100 * eval_dict[phase]['Accuracy']))
 
     eval_list.append(('Speed (msec)', 1000*dt))
     eval_list.append(('Speed (fps)', 1/dt))
