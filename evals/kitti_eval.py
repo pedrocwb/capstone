@@ -131,7 +131,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
                     total_negnum += negNum
 
         eval_dict[phase] = seg.pxEval_maximizeFMeasure(
-            total_posnum, total_negnum, total_fn, total_fp, thresh=c)
+            total_posnum, total_negnum, total_fn, total_fp, thresh=thresh)
 
         if phase == 'val':
             start_time = time.time()
