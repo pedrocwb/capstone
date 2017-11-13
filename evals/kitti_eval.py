@@ -69,7 +69,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
         image_list = []
 
         with open(data_file) as file:
-            for i, datum in enumerate(file):
+            for i, datum in enumerate(file)[0]:
                     datum = datum.rstrip()
                     image_file, gt_file = datum.split(" ")
                     image_file = os.path.join(image_dir, image_file)
